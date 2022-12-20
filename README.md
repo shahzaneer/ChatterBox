@@ -1,4 +1,4 @@
-# chatty
+# chatterbox
 
 ## Chat Bot with Dialogflow and Flutter
 
