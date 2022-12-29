@@ -9,7 +9,7 @@ without the knowledge of the AI/ML or without using the main stream logic we are
 
 ## Steps
 - 1. Create a Project on Dialog flow and then go to google cloud platform
-- 2. Create credentials > create services > give name only and done-O-done.
+- 2. Create credentials > create services > give name only and then give permission acess then done-O-done.
 - 3. Select that service > keys > generate key > JSON format > A copy will be downloaded
 - 4. Now, head over to the dialogflow and see the intend tab
 -  The intent tab contains the questions and their responses the user want to deliver
