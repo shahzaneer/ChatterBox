@@ -17,3 +17,7 @@ without the knowledge of the AI/ML or without using the main stream logic we are
 - 6. Now add the responses you want to add when queried and save the intend by giving it some name
 - Now you can see the name of the intend in the intend tabs
 
+## Chat Bot Screen
+
+![Chatbot Chatterbox Shahzaneer](./chatbot.jpeg)
+
