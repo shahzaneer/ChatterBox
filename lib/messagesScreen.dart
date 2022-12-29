@@ -23,24 +23,26 @@ class _MessagesScreenState extends State<MessagesScreen> {
                   ? MainAxisAlignment.end
                   : MainAxisAlignment.start,
               children: [
-                Container(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                      bottomLeft: const Radius.circular(20),
-                      topRight: const Radius.circular(20),
-                      topLeft: Radius.circular(
-                          widget.messages[index]['isUserMessage'] ? 20 : 0),
-                      bottomRight: Radius.circular(
-                          widget.messages[index]['isUserMessage'] ? 0 : 20),
+                Expanded(
+                  child: Container(
+                    padding:
+                        const EdgeInsets.symmetric(vertical: 14, horizontal: 8),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: const Radius.circular(20),
+                        topRight: const Radius.circular(20),
+                        topLeft: Radius.circular(
+                            widget.messages[index]['isUserMessage'] ? 20 : 0),
+                        bottomRight: Radius.circular(
+                            widget.messages[index]['isUserMessage'] ? 0 : 20),
+                      ),
+                      color: widget.messages[index]["isUserMessage"]
+                          ? Colors.grey.shade800
+                          : Colors.grey.shade900.withOpacity(0.8),
                     ),
-                    color: widget.messages[index]["isUserMessage"]
-                        ? Colors.grey.shade800
-                        : Colors.grey.shade900.withOpacity(0.8),
+                    constraints: BoxConstraints( minWidth:  w * 2/3),
+                    child: Text(widget.messages[index]["message"].text.text[0]),
                   ),
-                  constraints: BoxConstraints( minWidth:  w * 2/3),
-                  child: Text(widget.messages[index]["message"].text.text[0]),
                 )
               ],
             ),

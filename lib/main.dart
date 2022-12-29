@@ -90,15 +90,15 @@ class _HomeState extends State<Home> {
       print('Message is empty');
     } else {
       setState(() {
-        print("men msg apka add krne lga hun vroo");
+        // print("men msg apka add krne lga hun vroo");
         addMessage(Message(text: DialogText(text: [text])), true);
       });
 
-      print("abhi tk code chal rha hai");
+      // print("abhi tk code chal rha hai");
       DetectIntentResponse response = await _dialogFlowtter.detectIntent(
           queryInput: QueryInput(text: TextInput(text: text)));
 
-      print(response.message.toString() + "Yeh response msg hai");
+      // print(response.message.toString() + "Yeh response msg hai");
 
       if (response.message == null) return;
       setState(() {
