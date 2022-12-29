@@ -1,6 +1,8 @@
-# chatty
+# chatterbox
 
 ## Chat Bot with Dialogflow and Flutter
+
+Currently it is trained on the data about Shahzaneer Ahmed a talkative person xD
 
 # Dialogflow
 without the knowledge of the AI/ML or without using the main stream logic we are able to make AI Intelligent Chat bots with Dialogflow, a Product by google
