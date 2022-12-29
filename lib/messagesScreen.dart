@@ -40,7 +40,7 @@ class _MessagesScreenState extends State<MessagesScreen> {
                         : Colors.grey.shade900.withOpacity(0.8),
                   ),
                   constraints: BoxConstraints( minWidth:  w * 2/3),
-                  child: Text(widget.messages[index]["message"]),
+                  child: Text(widget.messages[index]["message"].text.text[0]),
                 )
               ],
             ),

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "chatterboxshahzaneer-tsjn",
+  "private_key_id": "e7c4e6abafb2b72349b2ed0f3088941da39cbf83",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC3x03j1WWq/D/A\npDC330yw0WKaP0rPhnigY6nYpDKIzHIZrjxq9L6LmlT24GUiuzj3xBmSlxrsvC5u\nnzIao+ekSVAN9Kk89jHKXb/15QWXtz2B+oZZ0daJIZQ1CInbV9L+5uNGSvmcNoI0\nLgECQ3axAT7SI6Lbp3WGbobe+bPeowR9QCpzPh5/Fki/w+uOlEuG2yrKjdjY08L/\ncVUgMu9z15H4lYvdpii0E11hjToaucFGBrMa2NQ6fFJk+LmjmuQnkU3ojWcWz53R\n3ipaxnC2IsXQ5MXo5FvT+1Z6oOrkUi0PiX6DkjYAQJP8lz7cRhDWVOuOHwRZrOUi\n4HXXgmcnAgMBAAECggEALsP70R9LiNA51OazMwcSt+gAZGn4uohoh7/0x5k49tC3\ntEs/OqRfHJ1AQ7ZkZgsoevwe2cuz4UwdsK64DElrN8YkJfj9W/L2Rp3GrGcEHlBV\nyY6bw51/L1QpJ7mtgvB9U7ojWY7Yp+TDC04tmYrbWD2N4+GHnselQ3k6vuDh4aRA\n6isViRGFu/DHHkU3BeIFoxTbmKyIadyCEdYz/S5gBLOQjmnwm+pR1oc34H0eLLGV\nbyXcajvwjSzPBZroDaV6ugnk6d2m+jeHeuy2OFrkHKMDGmp3y98AlaUKOEeC98tk\nKyjLRkA7sxEA1j7q+n5ho1MkyXrlYDbRalGw6OELIQKBgQDzw95d8oljT2siLnXy\nLDxmJ6tGg72HEvBG2V1FncPQudHRRbeWw+B720QPq5fErZos0N9Zm78qDta0Gi0q\nWiVDlP43URLbU8E4phG4kUVUpKKPNDdbA0XCGMXAzZCX1U/nBqncxoByoFgO3gg+\ntYrfnPMA/KNJS5ycng1h5e/M8QKBgQDBAKtwjQ/ucyBGIKB+bN+Cb7ZCabgAv0In\nBmf4EDx5yNeTE9AkQnO5Ba2qGC/HxOawZk4loDDBUTgqltexHGXLj7HKOgwGXkXE\n39dq+HHEcJCBEhWg9MYHZoq0ho20Eai0Ph/9XWmpKrFWJKA0fXilWuVcWhKsl9TK\nXdE7ekzVlwKBgDymdUNGvyw4bF161dnFa9m28QSAbr2W1rWqC2zwzfG26h95iy41\n2jq22X5UoVRMJVoVNh0jhTK/smfpQ2eQOklQXtgAkgKEGkUv/KTBcFCZDeE3irZY\nYBjk9P79poZAirrei5Dkyry6bG52i/KeVMlCUavjL/VinLrTEF1VSo7hAoGAZcDs\nohI87AJWaaKZ+w17aVFsTede00YCooCGIAqvV6XDwg8YFYXTbSDJRnwp9LCizy2g\n1cV27vTbH9kXLpFCOegwW+XuoQziy8EX2ZXSpTaTePkH3iwum4g8aKDn5J/KyfxW\n8UVmh4GyrS/yJrpf+Q3LDr2OSuBhl6+OuETqbVECgYBcHudKOSBimv6Ogi2Q/pG7\n6jRUieHbu7phUS6mnH/VVSwf9p0akdJCCio5oIEhvA3X9Jp093m6jhvvFK99u5AB\nirhnI6DLZpsvT+5GEN8PyNlUWeCo7Ycm2E42x3xQXSanSdR0+eZ5U+wIBtlmor6k\nMcr7iFdZqOS4/YD0drkoPw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "shahbox@chatterboxshahzaneer-tsjn.iam.gserviceaccount.com",
+  "client_id": "101203110887238047740",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/shahbox%40chatterboxshahzaneer-tsjn.iam.gserviceaccount.com"
+}

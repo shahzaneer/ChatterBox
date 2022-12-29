@@ -51,61 +51,87 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        child: Column(
-          children: [
-            Expanded(
-              child: MessagesScreen(messages: messages),
-            ),
-            Container(
-              color: Colors.deepPurple,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  vertical: 8,
-                  horizontal: 14,
-                ),
-                child: Row(children: [
-                  Expanded(
-                    child: TextField(
-                      controller: _controller,
-                      style: const TextStyle(color: Colors.white),
-                    ),
-                  ),
-                  IconButton(
-                    icon: const Icon(Icons.send),
-                    onPressed: () {
-                      sendMessage(_controller.text);
-                      _controller.clear();
-                    },
-                  )
-                ]),
+      body: Column(
+        children: [
+          Expanded(
+            child: MessagesScreen(messages: messages),
+          ),
+          Container(
+            color: Colors.deepPurple,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(
+                vertical: 8,
+                horizontal: 14,
               ),
+              child: Row(children: [
+                Expanded(
+                  child: TextField(
+                    controller: _controller,
+                    style: const TextStyle(color: Colors.white),
+                  ),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.send),
+                  onPressed: () {
+                    sendMessage(_controller.text);
+                    _controller.clear();
+                  },
+                )
+              ]),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
 
-  // Send Message
-  void sendMessage(String text) async {
+  sendMessage(String text) async {
     if (text.isEmpty) {
-      debugPrint("kuch nhi likha vrooo tumne");
-      return;
+      print('Message is empty');
+    } else {
+      setState(() {
+        print("men msg apka add krne lga hun vroo");
+        addMessage(Message(text: DialogText(text: [text])), true);
+      });
+
+      print("abhi tk code chal rha hai");
+      DetectIntentResponse response = await _dialogFlowtter.detectIntent(
+          queryInput: QueryInput(text: TextInput(text: text)));
+
+      print(response.message.toString() + "Yeh response msg hai");
+
+      if (response.message == null) return;
+      setState(() {
+        addMessage(response.message!);
+      });
     }
-    setState(() {
-      Message(text: DialogText(text: [text]));
-    });
-
-    DetectIntentResponse response = await _dialogFlowtter.detectIntent(
-      queryInput: QueryInput(text: TextInput(text: text)),
-    );
-
-    if (response.message == null) return;
-    setState(() {
-      addMessage(response.message!);
-    });
   }
+
+  // Send Message
+  // void sendMessage(String text) async {
+  //   if (text.isEmpty) {
+  //     debugPrint("kuch nhi likha vrooo tumne");
+  //     return;
+  //   } else {
+  //     // first setState for user
+  //     setState(() {
+  //       addMessage(Message(text: DialogText(text: [text])), true);
+  //     });
+
+  //     DetectIntentResponse response = await _dialogFlowtter.detectIntent(
+  //       queryInput: QueryInput(text: TextInput(text: text)),
+  //     );
+
+  //     if (response.message == null) {
+  //       debugPrint("RESPONSE HI NULL HAI BHAI - ISLIAY WAPIS CHALA GYA");
+  //       return;
+  //     }
+  //     setState(() {
+  //       // second setState for bot (after getting the response against the message)
+  //       addMessage(response.message!);
+  //     });
+  //   }
+  // }
 
   void addMessage(Message message, [bool isUserMessage = false]) {
     messages.add({
